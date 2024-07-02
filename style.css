@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-blend-mode: darken; 
+    background:  rgba(21, 21, 21, 0.7)url('./full.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+}
+/* navigation bar */
+nav{
+    width: 100%;
+    height: 100px;
+     display: flex ; 
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin:0.2rem 0.4rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: rgb(81, 167, 242);
+
+}
+.logo h1{
+    height:0.2rem;
+    margin:0.3rem 0.6rem;
+    color: rgb(132, 178, 239);
+    text-align: center;
+    font-size: 5rem;
+}
+.menu a{
+    text-decoration: none;
+    color:rgb(242, 244, 242);
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu a:before{
+content: '';
+position: absolute;
+top:0;
+left: 0;
+width: 0%;
+height:100%;
+border-bottom:2px solid rgb(14, 14, 14);
+transition: 0.4s linear;
+
+}
+.menu a:hover:before{
+width: 90%;
+}
+.text{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    
+}
+.text span{
+    letter-spacing: 5px;
+
+}
+.text h1{
+    font-size: 3rem;
+}
+.text a{
+    text-decoration: none;
+background-color: rgb(224, 125, 31);
+color: white;
+padding: 10px 20px;
+letter-spacing: 5px;
+border-radius: 10px;
+
+}
+/* for making responsive*/
+         @media(max-width:992px){/*//998 */
+            html{
+                font-size:55%;
+            }
+        }
+        @media(max-width:600px)
+        {
+          
+            html{
+                font-size: 45%;
+            }
+        }
